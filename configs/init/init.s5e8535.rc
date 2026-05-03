@@ -379,7 +379,7 @@ on post-fs-data
 
 # Permission for GPU
     chown mediacodec system /sys/kernel/gpu/gpu_mm_min_clock
-    chmod 0644 /sys/kernel/gpu/gpu_mm_min_clock
+    chmod 0664 /sys/kernel/gpu/gpu_mm_min_clock
     chmod 0000 /sys/class/devfreq/16e00000.sgpu/trans_stat
 
 # HWC data
