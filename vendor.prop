@@ -86,6 +86,7 @@ vendor.powerhal.disp.idle_support=false
 
 ## RIL
 ro.radio.noril=no
+ro.carrier=unknown
 
 ## Samsung specific
 ro.product_ship=true
