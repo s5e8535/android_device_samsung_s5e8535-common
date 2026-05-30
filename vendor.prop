@@ -64,6 +64,7 @@ persist.sys.fuse.passthrough.enable=true
 
 ## Graphics
 debug.hwui.skia_atrace_enabled=false
+debug.renderengine.backend=skiavkthreaded
 debug.renderengine.blur_algorithm=kawase
 debug.sf.auto_latch_unsignaled=0
 debug.sf.latch_unsignaled=1
