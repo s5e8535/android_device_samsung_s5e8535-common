@@ -128,6 +128,18 @@ PRODUCT_PACKAGES += \
 # Dynamic partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# AOSP userspace IMS and framework bearer services
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/lineage/imsstack-carrier-config-ext
+
+$(call inherit-product, packages/modules/ImsMedia/imsmedia.mk)
+$(call soong_config_set,imsstack_namespace,use_carrier_config_ext,true)
+
+PRODUCT_PACKAGES += \
+    ImsStack \
+    Iwlan \
+    QualifiedNetworksService
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
